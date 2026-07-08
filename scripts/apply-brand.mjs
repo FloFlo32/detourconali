@@ -13,8 +13,9 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
+import { pathToFileURL } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-const { brand } = await import(join(root, "brand.config.ts"));
+const { brand } = await import(pathToFileURL(join(root, "brand.config.ts")).href);
 
 const slug = (s) =>
   s
