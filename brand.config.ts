@@ -1,75 +1,43 @@
 /**
  * ────────────────────────────────────────────────────────────────────────────
- *  BRAND CONFIG — the single source of truth for this site.
+ *  BRAND CONFIG — De Tour Con Ali
  * ────────────────────────────────────────────────────────────────────────────
- *
- *  This is the ONLY file most people need to edit to make the starter their own.
- *
- *  1. Edit the values below.
- *  2. Run:  npm run brand
- *
- *  The `brand` script propagates everything that can't be imported at runtime
- *  (package.json name, README title, theme colors in globals.css, env hints).
- *  Everything else (site name in the UI, <title>, OG metadata, footer, links)
- *  is imported directly from this file, so it updates the instant you save.
- *
- *  Colors use OKLCH — a perceptual color space. Keep the same lightness/chroma
- *  and just change the hue (the 3rd number) to re-skin the whole site:
- *    hue 265 = violet · 230 = blue · 160 = emerald · 25 = red · 70 = amber
  */
 
 export const brand = {
-  /** Product / company name. Shows in the nav, hero, footer, <title>, OG tags. */
-  name: "Aurora",
+  name: "De Tour Con Ali",
 
-  /** One-line value prop. Used in the hero sub-headline + meta description. */
-  tagline: "The starter pack for shipping websites that don't look AI-built.",
+  tagline: "Take a detour from the ordinary tours and experience Puerto Rico like a local!",
 
-  /** Longer description for SEO / Open Graph. ~150 chars is ideal. */
   description:
-    "A production-grade Next.js + Tailwind + shadcn starter with a real design system, motion, and one-command deploy to Vercel.",
+    "Puerto Rico Island Guided Tours. Off the beaten path, customized and culturally enriched experiences with certified tour guides. San Juan, PR.",
 
-  /** Primary domain WITHOUT protocol. `/build` sets this to <project>.getyetti.com. */
-  domain: "aurora.getyetti.com",
+  domain: "detourconali.getyetti.com",
 
-  /** Theme — drives the whole color system. Run `npm run brand` after editing. */
   theme: {
-    /** Brand hue in OKLCH degrees (0–360). This single number re-skins the site. */
-    hue: 265,
-    /** Corner style. "sharp" = modern/editorial, "rounded" = friendly, "pill" = playful. */
+    /** Hue 145 = tropical green extracted from the logo palette */
+    hue: 145,
     corners: "rounded" as "sharp" | "rounded" | "pill",
-    /** Default color scheme on first paint. */
-    defaultScheme: "dark" as "light" | "dark",
+    defaultScheme: "light" as "light" | "dark",
   },
 
-  /** Fonts. Any Google Font name works — edit, then run `npm run brand`. */
   fonts: {
-    /** Big headlines. Pick something with PERSONALITY — this is what breaks the AI look. */
-    display: "Space Grotesk",
-    /** Body / UI text. Keep it clean and readable. */
-    sans: "Geist",
-    /** Code / labels / kbd. */
+    display: "Fraunces",
+    sans: "Plus Jakarta Sans",
     mono: "JetBrains Mono",
   },
 
-  /** Links shown in the footer + used by deploy scripts. */
   social: {
-    github: "your-org/your-repo",
-    x: "yourhandle",
-    email: "hello@aurora.example.com",
+    github: "detourconali",
+    x: "aliwonders",
+    email: "detourconali@gmail.com",
   },
 
-  /**
-   * Contact + location. `npm run ingest` fills these from the scraped site.
-   * - whatsapp: digits only, country code first, no "+". Set it and a click-to-chat
-   *   widget appears (components/widget/whatsapp-widget.tsx).
-   * - address + mapQuery: set them and the <Map> section renders a pin + embedded map.
-   */
   contact: {
     whatsapp: "",
-    phone: "",
-    address: "",
-    mapQuery: "",
+    phone: "+17872220667",
+    address: "PO BOX 9020685, San Juan, PR 00902",
+    mapQuery: "San Juan, Puerto Rico",
   },
 } as const;
 

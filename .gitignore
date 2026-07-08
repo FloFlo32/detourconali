@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# agent worktree scratch (not site content)
+/.claude/worktrees
+/.clone
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

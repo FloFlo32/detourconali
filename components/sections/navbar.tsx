@@ -2,17 +2,20 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { brand } from "@/brand.config";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#features", label: "Features" },
-  { href: "#bento", label: "Why us" },
-  { href: "#stats", label: "Results" },
-  { href: "#cta", label: "Pricing" },
+  { href: "/", label: "Home" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/services", label: "Services" },
+  { href: "/destinations-tours-puerto-rico", label: "Destinations" },
+  { href: "/custom-guided-tours-puerto-rico", label: "Custom Tours" },
+  { href: "/group-tour-experiences-puerto-rico", label: "Group Tours" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact-us", label: "Contact" },
 ];
 
 export function Navbar() {
@@ -31,24 +34,21 @@ export function Navbar() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "border-b border-border/60 bg-background/70 backdrop-blur-xl"
-          : "border-b border-transparent"
+          ? "border-b border-border/60 bg-white/90 backdrop-blur-xl shadow-sm"
+          : "border-b border-transparent bg-white/80 backdrop-blur-sm"
       )}
     >
-      <nav className="container-px mx-auto flex h-16 max-w-6xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
-          <span className="grid size-8 place-items-center rounded-lg bg-primary text-primary-foreground shadow-sm shadow-primary/30">
-            {brand.name.charAt(0)}
-          </span>
-          {brand.name}
+      <nav className="container-px mx-auto flex h-16 max-w-7xl items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 cursor-pointer">
+          <img src="/logo.png" alt="De Tour Con Ali" className="h-10 w-auto" />
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-0.5 lg:flex">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="rounded-md px-3 py-2 text-sm font-medium text-foreground/70 transition-colors hover:text-foreground hover:bg-accent cursor-pointer"
             >
               {l.label}
             </Link>
@@ -56,38 +56,62 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <Button asChild size="sm" className="hidden md:inline-flex">
-            <Link href="#cta">Get started</Link>
-          </Button>
+          <a
+            href="tel:+17872220667"
+            className="hidden md:flex items-center gap-1.5 text-sm font-medium text-foreground/70 hover:text-foreground transition-colors cursor-pointer"
+          >
+            <Phone className="size-4 text-primary" />
+            (787) 222-0667
+          </a>
           <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
+            asChild
+            size="sm"
+            className="hidden md:inline-flex cursor-pointer bg-primary hover:bg-primary/90"
+          >
+            <Link
+              href="https://book.peek.com/s/e5f2dedc-d99b-41da-b05c-af05a53280c2/9Eyvq"
+              target="_blank"
+            >
+              Book a Tour
+            </Link>
+          </Button>
+          <button
+            className="lg:hidden p-2 rounded-md text-foreground cursor-pointer"
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
-          </Button>
+          </button>
         </div>
       </nav>
 
       {open && (
-        <div className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
-          <div className="container-px mx-auto flex max-w-6xl flex-col gap-1 py-4">
+        <div className="border-t border-border/60 bg-white/95 backdrop-blur-xl lg:hidden">
+          <div className="container-px mx-auto flex max-w-7xl flex-col gap-1 py-4">
             {links.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+                className="rounded-md px-3 py-2.5 text-sm font-medium text-foreground/70 hover:bg-accent hover:text-foreground cursor-pointer transition-colors"
               >
                 {l.label}
               </Link>
             ))}
-            <Button asChild className="mt-2">
-              <Link href="#cta" onClick={() => setOpen(false)}>
-                Get started
+            <a
+              href="tel:+17872220667"
+              className="flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-foreground/70"
+            >
+              <Phone className="size-4 text-primary" />
+              (787) 222-0667
+            </a>
+            <Button asChild className="mt-2 cursor-pointer">
+              <Link
+                href="https://book.peek.com/s/e5f2dedc-d99b-41da-b05c-af05a53280c2/9Eyvq"
+                target="_blank"
+                onClick={() => setOpen(false)}
+              >
+                Book a Tour
               </Link>
             </Button>
           </div>
