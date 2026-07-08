@@ -1,0 +1,191 @@
+{
+  "source": "https://www.detourconali.com/",
+  "ingestedFromHost": "detourconali.com",
+  "pagesCrawled": 8,
+  "name": "Detourconali.com",
+  "tagline": "Puerto Rico Island Guided Tours | De Tour Con Ali",
+  "description": "Private tours with Certified Tour Guides. We specialize in customized, culturally enriched, \"off the beaten path\" and student travel group experiences. Join custom hiking tours of San Juan Puerto Rico with De Tour Con Ali",
+  "domain": "detourconali.com",
+  "brandColor": {
+    "hex": "#bada55",
+    "src": "css-frequency",
+    "oklchHue": 121
+  },
+  "theme": {
+    "hue": 121
+  },
+  "fonts": [],
+  "logo": null,
+  "logoNote": "Logo not auto-found — grab the navbar logo manually",
+  "favicon": "https://static.wixstatic.com/media/401c00_b6365f6d6f344381a7ef1224c4e2f327%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/401c00_b6365f6d6f344381a7ef1224c4e2f327%7Emv2.png",
+  "images": [
+    "/ingested/detourconali/img-006.webp",
+    "/ingested/detourconali/img-007.webp",
+    "/ingested/detourconali/img-008.webp",
+    "/ingested/detourconali/img-009.webp",
+    "/ingested/detourconali/img-010.webp",
+    "/ingested/detourconali/img-011.webp",
+    "/ingested/detourconali/img-012.webp",
+    "/ingested/detourconali/img-013.webp",
+    "/ingested/detourconali/img-014.webp",
+    "/ingested/detourconali/img-015.webp",
+    "/ingested/detourconali/img-016.gif",
+    "/ingested/detourconali/img-017.webp",
+    "/ingested/detourconali/img-018.webp",
+    "/ingested/detourconali/img-019.webp",
+    "/ingested/detourconali/img-020.webp",
+    "/ingested/detourconali/img-021.webp",
+    "/ingested/detourconali/img-022.webp",
+    "/ingested/detourconali/img-027.webp",
+    "/ingested/detourconali/img-028.webp",
+    "/ingested/detourconali/img-029.webp",
+    "/ingested/detourconali/img-030.webp",
+    "/ingested/detourconali/img-033.webp",
+    "/ingested/detourconali/img-034.webp",
+    "/ingested/detourconali/img-035.webp",
+    "/ingested/detourconali/img-036.webp",
+    "/ingested/detourconali/img-037.gif",
+    "/ingested/detourconali/img-038.webp",
+    "/ingested/detourconali/img-039.webp",
+    "/ingested/detourconali/img-040.webp",
+    "/ingested/detourconali/img-044.webp",
+    "/ingested/detourconali/img-045.webp",
+    "/ingested/detourconali/img-049.gif"
+  ],
+  "imageCount": 32,
+  "social": {
+    "instagram": "https://www.instagram.com/detourconali",
+    "email": "info@mysite.com",
+    "x": "https://twitter.com/aliwonders"
+  },
+  "whatsapp": null,
+  "phone": "+17872220667",
+  "location": null,
+  "sectionOrder": [
+    "(787) 222-0667",
+    "Tours & Pricing",
+    "Let me show you my island",
+    "pr countryside tour with visit to a waterfall",
+    "$85 pp",
+    "$69 pp",
+    "Guided Snorkling & Biobay Tour",
+    "$189 pp",
+    "Starting $99/hr",
+    "EL YUNQUE",
+    "Hike To Hidden Gem",
+    "Starting at $95 PP"
+  ],
+  "navItems": [
+    {
+      "text": "Gallery",
+      "url": "https://www.detourconali.com/undefined",
+      "path": "/undefined"
+    },
+    {
+      "text": "About us",
+      "url": "https://www.detourconali.com/about-us",
+      "path": "/about-us"
+    },
+    {
+      "text": "Services",
+      "url": "https://www.detourconali.com/services",
+      "path": "/services"
+    },
+    {
+      "text": "Destinations Tours Puerto Rico",
+      "url": "https://www.detourconali.com/destinations-tours-puerto-rico",
+      "path": "/destinations-tours-puerto-rico"
+    },
+    {
+      "text": "Custom Guided Tours Puerto Rico",
+      "url": "https://www.detourconali.com/custom-guided-tours-puerto-rico",
+      "path": "/custom-guided-tours-puerto-rico"
+    },
+    {
+      "text": "Group Tour Experiences Puerto Rico",
+      "url": "https://www.detourconali.com/group-tour-experiences-puerto-rico",
+      "path": "/group-tour-experiences-puerto-rico"
+    },
+    {
+      "text": "Contact us",
+      "url": "https://www.detourconali.com/contact-us",
+      "path": "/contact-us"
+    },
+    {
+      "text": "Blog",
+      "url": "https://www.detourconali.com/blog",
+      "path": "/blog"
+    }
+  ],
+  "footerItems": [],
+  "innerPages": [
+    {
+      "path": "/services",
+      "title": "Services | Detourconali.com",
+      "sections": [
+        "Tours & Pricing",
+        "Let me show you my island",
+        "PR COUNTRYSIDE TOUR WITH VISIT TO A WATERFALL",
+        "$89 pp",
+        "$69 pp",
+        "Starting $99/hr",
+        "EL YUNQUE",
+        "Starting $85 pp",
+        "Hike To Hidden Gem",
+        "$75 pp"
+      ]
+    },
+    {
+      "path": "/about-us",
+      "title": "About us | Detourconali.com",
+      "sections": [
+        "About us",
+        "ABOUT ME",
+        "De TOUr con ali"
+      ]
+    },
+    {
+      "path": "/destinations-tours-puerto-rico",
+      "title": "Destinations Tours Puerto Rico | Detourconali.com",
+      "sections": [
+        "Puerto Rico Island Tours",
+        "Enjoy the Best Panoramic Views of Puerto Rico"
+      ]
+    },
+    {
+      "path": "/custom-guided-tours-puerto-rico",
+      "title": "Custom Guided Tours Puerto Rico | Detourconali.com",
+      "sections": [
+        "Customized Tours of Puerto Rico",
+        "Be A Part of The Best Private Tours of Puerto Rico"
+      ]
+    },
+    {
+      "path": "/group-tour-experiences-puerto-rico",
+      "title": "Group Tour Experiences Puerto Rico | Detourconali.com",
+      "sections": [
+        "Group Travel to Puerto Rico",
+        "Best Kid-Friendly Tours",
+        "De Tour Con Ali: For a Memorable Group Tour Experience",
+        "Wait! Before you go..."
+      ]
+    },
+    {
+      "path": "/contact-us",
+      "title": "Contact us | Detourconali.com",
+      "sections": [
+        "Contact us"
+      ]
+    },
+    {
+      "path": "/blog",
+      "title": "Blog | Detourconali.com",
+      "sections": [
+        "Now Offering El Yunque Tours",
+        "How To Plan a Memorable Trip to Puerto Rico with Your Kids",
+        "A Tour Guide’s Tips to Explore Puerto Rico",
+        "Planning a Trip to Puerto Rico? 6 Things You Should Not Forget to Bring"
+      ]
+    }
+  ]
+}
